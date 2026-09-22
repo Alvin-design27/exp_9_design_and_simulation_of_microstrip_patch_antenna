@@ -119,6 +119,7 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 ---
 
 ## Observations
+
 ### Table 1: Simulated S-Parameter and VSWR Response across Frequency Band
 
 * **Design Center Frequency ($f_0$):** 2.45 GHz
@@ -156,30 +157,10 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 | HPBW (E-plane, $\phi = 0^\circ$) | **72.4** | — | Degrees ($^\circ$) |
 | HPBW (H-plane, $\phi = 90^\circ$) | **84.6** | — | Degrees ($^\circ$) |
 
-
-
-### Graphs
-
-
-* S11 vs frequency
-*(Include your own graph)*
-
-* VSWR vs frequency
-*(Include your own graph)*
-
-* 2-D E-plane and H-plane radiation patterns
-*(Include your own graph)*
-
-
 ---
+<img width="1080" height="470" alt="WhatsApp Image 2026-09-22 at 11 18 16 AM" src="https://github.com/user-attachments/assets/ab3ab627-eafd-404d-95ff-253ae421b3ef" />
+<img width="996" height="450" alt="WhatsApp Image 2026-09-22 at 11 18 17 AM" src="https://github.com/user-attachments/assets/1bd7f246-eb4b-4699-b33c-b2919ed1e742" />
 
-## Precautions
-
-1. Ensure the air box / radiation boundary is at least λ/4 away from the patch structure on all sides.
-2. Use a fine mesh near the feed point and patch edges for accurate convergence.
-3. Verify the substrate material properties (ε_r, loss tangent, thickness) before running the simulation.
-4. Check the port impedance and de-embedding settings before reading S11/VSWR values.
-5. Validate the geometry (no overlapping or unassigned boundaries) before analysis.
 
 ## Result
 
@@ -188,8 +169,8 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 * **VSWR:** `1.07`
 * **Gain:** `6.45 dBi`
 
+---
 
 ## Conclusion
 
-A rectangular microstrip patch antenna was designed and simulated at ______ GHz using Ansys HFSS.
-
+A rectangular microstrip patch antenna was designed and simulated at **2.45 GHz** using Ansys HFSS. The antenna resonated cleanly at **2.448 GHz** with an input return loss ($S_{11}$) of **-28.62 dB** and a VSWR of **1.07**, confirming excellent impedance matching to the $50\ \Omega$ inset microstrip feed line. The simulated radiation pattern demonstrated broadside directive characteristics with a half-power beamwidth of **$72.4^\circ$** in the E-plane and **$84.6^\circ$** in the H-plane, delivering a peak realized gain of **6.45 dBi** and a radiation efficiency of **91.8%** across a $-10\text{ dB}$ fractional bandwidth of **2.04%** (50 MHz).
